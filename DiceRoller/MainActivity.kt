@@ -15,8 +15,10 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.button);
         val textview: TextView = findViewById(R.id.textview)
         val imageview: ImageView= findViewById(R.id.imageView)
-        
-         imageview.setOnClickListener{
+
+
+        //CLICK ON IMAGE TO ROLL
+        imageview.setOnClickListener{
             var c :Int =(1..6).random()
 
             when(c)
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
             textview.text=c.toString()
         }
-
+        //CLICK ON BUTTON TO ROLL
         button.setOnClickListener{
             var c :Int =(1..6).random()
 
